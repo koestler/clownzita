@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da chunt bald was</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+            width: 90vw;
+            max-width: 90vw;
+        }
+
+        h1 {
+            color: black;
+            font-size: clamp(2rem, 15vw, 12rem);
+            line-height: 1.2;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        /* Mobile: smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 95vw;
+            }
+
+            h1 {
+                font-size: clamp(1.5rem, 12vw, 3rem);
+            }
+        }
+
+        /* Desktop: larger screens */
+        @media (min-width: 1024px) {
+            .container {
+                width: 80vw;
+                max-width: 1200px;
+            }
+
+            h1 {
+                font-size: clamp(3rem, 10vw, 8rem);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Da chunt bald was</h1>
+    </div>
+</body>
+</html>
+
